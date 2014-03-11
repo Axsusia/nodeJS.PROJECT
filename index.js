@@ -5,8 +5,8 @@ var router = require("./router");
 var requestHandlers = require('./requestHandlers');
 
 var handle = {};
-handle["/"] = reqeustHandlers.start;
-handle["/start"] = reqeustHandlers.start;
-handle["/upload"] = reqeustHandlers.upload;
+handle["/"] = requestHandlers.start;
+handle["/start"] = requestHandlers.start;
+handle["/upload"] = requestHandlers.upload;
 
 server.start(router.route, handle);
