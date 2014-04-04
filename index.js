@@ -1,4 +1,4 @@
-console.log('This is index.js');
+onsole.log('This is index.js');
 
 var server = require("./server");
 var router = require("./router");
