@@ -4,6 +4,7 @@ var querystring = require("querystring");
 var exec = require("child_process").exec;
 var fs = require("fs");
 var formidable = require("formidable");
+var expess = require("express");
 /*
 	fs 는 이미지 업로드를 하기 위해서 필요하다.
 	fs 는 외부 모듈로 따로 설치를 해주어야 한다.
@@ -118,7 +119,12 @@ function show(response){//postData
 	});
 }
 
+
+function uploadTest(response, request){
+
+}
+
 exports.start = start;
 exports.upload = upload;
 exports.show = show;
-
+exports.uploadTest = uploadTest;
