@@ -1,4 +1,4 @@
-onsole.log('This is index.js');
+console.log('This is index.js');
 
 var server = require("./server");
 var router = require("./router");
@@ -8,5 +8,6 @@ var handle = {};
 handle["/"] = requestHandlers.start;
 handle["/start"] = requestHandlers.start;
 handle["/upload"] = requestHandlers.upload;
+handle["/show"] = requestHandlers.show;
 
 server.start(router.route, handle);
