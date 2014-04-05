@@ -121,7 +121,7 @@ function show(response){//postData
 
 
 function uploadTest(response, request){
-
+	return "test for test ";
 }
 
 exports.start = start;
