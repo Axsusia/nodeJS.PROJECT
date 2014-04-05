@@ -13,6 +13,9 @@ var expess = require("express");
 	// 성공이라면 아래와 같이 나온다.
 	npm info build Success: formidable@ver
 	npm ok
+
+	우분투 에러시
+	http://stackoverflow.com/questions/12913141/installing-from-npm-fails
 */
 
 function start(response){//postData
