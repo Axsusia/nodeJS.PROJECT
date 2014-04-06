@@ -124,7 +124,7 @@ function show(response){//postData
 
 
 function uploadTest(response, request){
-	response.writeHead(200, {"Content-Type":"image/png"});
+	response.writeHead(200, {"Content-Type":"text/plain"});
 	response.write("its uploadTest <<!", "binary");
 	response.end();
 }
