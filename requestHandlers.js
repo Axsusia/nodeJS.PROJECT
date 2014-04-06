@@ -124,7 +124,9 @@ function show(response){//postData
 
 
 function uploadTest(response, request){
-	return "test for test ";
+	response.writeHead(200, {"Content-Type":"image/png"});
+	response.write("its uploadTest <<!", "binary");
+	response.end();
 }
 
 exports.start = start;
